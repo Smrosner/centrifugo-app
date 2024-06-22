@@ -1,0 +1,10 @@
+{
+  "secret": "your-secret",
+  "namespaces": [
+    {
+      "name": "orderbook",
+      "history_size": 1000,
+      "history_lifetime": 3600
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+.orderbook {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+  color: #d1d1d1;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+.bids,
+.asks {
+  width: 48%;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #b5b5b5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+.bids .price,
+.asks .price {
+  color: #00ff00; /* Green color for bids, adjust as necessary */
+}
+
+.bids .size,
+.asks .size {
+  color: #00b300; /* Slightly darker green for size */
+}
+
+.asks .price {
+  color: #ff0000; /* Red color for asks */
+}
+
+.asks .size {
+  color: #b30000; /* Slightly darker red for size */
+}
+
+.total {
+  color: #f0f0f0; /* Light grey for total */
+}
+
+.orderbook .bids ul,
+.orderbook .asks ul {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.bids ul li,
+.asks ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+}
+
+.bids ul li:last-child,
+.asks ul li:last-child {
+  border-bottom: none;
+}
+
+.price {
+  width: 30%;
+}
+
+.size {
+  width: 30%;
+}
+
+.total {
+  width: 40%;
+}
